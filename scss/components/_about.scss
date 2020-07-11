@@ -1,0 +1,21 @@
+.content{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 40% 10% 40% 1fr;
+    grid-template-rows: 20% 70% 10%;
+    &__img{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 1vh;
+        height: 50vh;
+    }
+    &__text{
+        font-size: 1.1rem;
+    }
+    &__container{
+        grid-column: 4/6;
+        grid-row: 2/3;
+        margin: 1vh 1vw;
+        padding: 7vh 2vw;
+    }
+}
