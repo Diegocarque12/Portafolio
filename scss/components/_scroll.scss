@@ -1,0 +1,8 @@
+.transition{
+    &--main__title{
+        font-size: 15rem;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+}
