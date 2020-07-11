@@ -10,7 +10,9 @@ html{
 }
 
 body{
-    background-color: $primary-color;
+    background-color: $color-1;
+    color:$color-1;
+    overflow-x:hidden;
 }
 
 li{

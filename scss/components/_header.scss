@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 1.2vh 0;
         &__nav{
-        background-color: $primary-color;
+        background-color: $color-1;
         height: 15vh;
         width: 100vw;
         display: flex;
@@ -23,11 +23,14 @@
 .list__item{
     .header__list &{
         font-size: 1.4rem;
-        color: $third-gray-color;
-        &:focus{
-            color: $secondary-color;
+        color: $color-6;
+        &:hover{
+            color: $mostasa;
             font-weight: bold;
             text-decoration: underline;
+        }
+        &:focus{
+            transform: scale(1.4);
         }
     }
 }
