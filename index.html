@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Diego Carvajal</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <header>
-        <div class="lgo">
-            <h1>Diego Carvajal</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a class="list__item" href="#about">About Me</a></li>
+                <li><a class="list__item" href="#projects">Projects</a></li>
+                <li><a class="list__item" href="#contact">Contact</a></li>
             </ul>  
         </nav>
     </header>
     <article class="container">
         <section class="container--main">
+            <img class="container__img" src="https://picsum.photos/608/580?grayscale" alt="">
             <div class="text--title">
                 <h1>Diego Carvajal</h1>
             </div>
@@ -31,16 +30,14 @@
             </div>
         </section>
 
-        <section class="container--about">
-            <div class="title">
-                <h2>About</h2>
+        <section class="container--about" id="about">
+            <div class="container--about__title">
+                <h2 class="text--title">About Me</h2>
             </div>
             <div class="content">
-                <div class="content__img">
-                    <img src="" alt="">
-                </div>
-                <div class="content__text">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <img class="content__img" src="https://picsum.photos/400/249?grayscale" alt="">
+                <div class="content__container">
+                    <p class="content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Fugiat ex quam unde magni nostrum ullam, 
                         recusandae nobis exercitationem eius ipsa consectetur dolorem 
                         omnis optio provident at sapiente quasi consequuntur illum?
@@ -49,69 +46,59 @@
             </div>
         </section>
 
-        <section class="container--projects">
-            <div class="title">
-                <h2>Projects</h2>
-            </div>
-            <div class="box">
-                <div class="project">
-                    <img src="" alt="">
-                    <div class="project__text">
-                        <span>Plataforma</span>
-                        <h3>Titulo del proyecto</h3>
-                        <p>Rol que desempene</p>
-                        <a href="">Leer mas</a>
-                    </div>
+        <section class="container--projects" id="projects">
+            <h2 class="text--title">Projects.</h2>
+            <div class="project project--left">
+                <img class="project__img" src="" alt="">
+                <div class="project__text">
+                    <span class="project__text--lgn">Plataforma</span>
+                    <h3 class="project__text--pjName">Titulo del proyecto</h3>
+                    <p class="project__text--rol">Rol que desempene</p>
                 </div>
-                <div class="project">
-                    <img src="" alt="">
-                    <div class="project__text">
-                        <span>Plataforma</span>
-                        <h3>Titulo del proyecto</h3>
-                        <p>Rol que desempene</p>
-                        <a href="">Leer mas</a>
-                    </div>
+            </div>
+            <div class="project project--right">
+                <img class="project__img" src="" alt="">
+                <div class="project__text">
+                    <span class="project__text--lgn">Plataforma</span>
+                    <h3 class="project__text--pjName">Titulo del proyecto</h3>
+                    <p class="project__text--rol">Rol que desempene</p>
                 </div>
             </div>
         </section>
 
-        <section class="container--contact">
-            <div class="title">
-                <h2>Contact</h2>
-            </div>
-            <div class="contact">
-                <h3>Got a project? Let's talk.</h3>
-                <p>diegocarque1213@gmail.com</p>
+        <section class="container--contact" id="contact">
+            <h2 class="text--title">Contact.</h2>
+            <div class="contact__text">
+                <h3 class="contact__text--subtitle">Got a project? Let's talk.</h3>
+                <p class="contact__text--prg">diegocarque1213@gmail.com</p>
             </div>
             <div class="contact__social">
-                <div class="social__block">
-                    <h4>linkedIn</h4>
-                    <img src="" alt="">
+                <div class="social__block top-left">
+                    <h4 class="social__block--title">Facebook</h4>
+                    <img class="social__block--img" src="/src/facebook.png" alt="">
                 </div>
-                <div class="social__block">
-                    <h4>linkedIn</h4>
-                    <img src="" alt="">
+                <div class="social__block bottom-left">
+                    <h4 class="social__block--title">GitHub</h4>
+                    <img class="social__block--img" src="/src/github.png" alt="">
                 </div>
-                <div class="social__block">
-                    <h4>linkedIn</h4>
-                    <img src="" alt="">
+                <div class="social__block top-right">
+                    <h4 class="social__block--title">Instagram</h4>
+                    <img class="social__block--img" src="/src/instagram.png" alt="">
                 </div>
-                <div class="social__block">
-                    <h4>linkedIn</h4>
-                    <img src="" alt="">
+                <div class="social__block bottom-right">
+                    <h4 class="social__block--title">linkedIn</h4>
+                    <img class="social__block--img" src="/src/linkedin.png" alt="">
                 </div>
             </div>
             <div class="contact__more">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos, 
+                <p class="contact__more--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos, 
                     voluptas ea vero earum totam facilis cum, magni deserunt magnam tenetur. 
                     Omnis nam blanditiis numquam aliquid ad voluptates ea in!</p>
             </div>
         </section>
     </article>
-    <footer>
-        <div class="foot">
-            <p>Copyright 2020</p>
-        </div>
+    <footer class="footer">
+        <p class="footer__text">2020 Copyright. All Rights Reserved</p>
     </footer>
 </body>
 </html>

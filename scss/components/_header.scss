@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.2vh 0;
+        &__nav{
+        background-color: $primary-color;
+        height: 15vh;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: end;
+        margin-right: 6vw;
+    }
+}
+.list__item{
+    .header__list &{
+        font-size: 1.4rem;
+        color: $third-gray-color;
+        &:focus{
+            color: $secondary-color;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
+

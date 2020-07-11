@@ -1,0 +1,11 @@
+.footer{
+    height: 60px;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__text{
+        padding-top: 3vh;
+        color: $primary-color;
+    }
+}
