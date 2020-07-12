@@ -114,11 +114,12 @@
 .text{
     &--title{
         .container--main &{
-            font-size: 6rem;
             grid-row: 1;
             grid-column: 2/4;
-            width: 60%;
             color: $mostasa-2;
+            &__title{
+                font-size: 7rem;
+            }
             @media (max-width: 742px) {
                 font-size: 4rem;
             }
