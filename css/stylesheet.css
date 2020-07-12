@@ -243,10 +243,9 @@ a {
 }
 
 .container--main .text--title {
-  font-size: 6rem;
+  font-size: 7rem;
   grid-row: 1;
   grid-column: 2/4;
-  width: 60%;
   color: #e7a61ac2;
 }
 
@@ -707,13 +706,6 @@ a {
 
 .contact__more--text {
   padding-top: 8vh;
-}
-
-.transition--main__title {
-  font-size: 15rem;
-  transition: 0.5s;
-  transform-origin: left;
-  transform: scaleX(1);
 }
 
 @media (max-width: 900px) {
