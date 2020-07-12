@@ -404,6 +404,12 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  .content__text {
+    padding-right: 20vw;
+  }
+}
+
 .content__container {
   grid-column: 4/6;
   grid-row: 2/3;
