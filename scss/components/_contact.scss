@@ -108,23 +108,5 @@
             
         }
     }
-    &__more{
-        grid-row: 6;
-        grid-column: 1/6;
-        padding: 0 15vw;
-        background-color: $color-6;
-        margin-top: 1vh;
-        &--text{
-            padding-top: 8vh;
-            @media (max-width: 900px) {
-                grid-row: 4/5;
-                padding: 2vh 1vh;
-            }
-        }
-        @media (max-width: 900px) {
-            grid-row: 4/5;
-            padding: 0;
-        }
-    }
     
 }

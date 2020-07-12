@@ -117,8 +117,11 @@ a {
 }
 
 .container--main .container__img {
+  max-width: 450px;
+  height: 550px;
   grid-row: 1;
   grid-column: 3/4;
+  margin-left: 15vw;
 }
 
 @media (max-width: 812px) {
@@ -126,12 +129,20 @@ a {
     grid-column: 2/3;
     width: 100%;
     grid-row: 1;
+    max-height: 550px;
   }
 }
 
 @media (max-width: 742px) {
   .container--main .container__img {
     grid-row: 2;
+  }
+}
+
+@media (max-width: 564px) {
+  .container--main .container__img {
+    margin-left: 0px;
+    min-width: 450px;
   }
 }
 
@@ -222,22 +233,21 @@ a {
   grid-row: 1;
   grid-column: 2/4;
   color: #e7a61ac2;
-}
-
-.container--main .text--title__title {
+  margin-top: 40vh;
   font-size: 7rem;
 }
 
 @media (max-width: 742px) {
   .container--main .text--title {
-    font-size: 4rem;
+    margin-top: 0px;
+    grid-row: 1;
+    grid-column: 2/4;
   }
 }
 
-@media (max-width: 742px) {
-  .container--main .text--title {
-    grid-row: 1;
-    grid-column: 2/4;
+@media (max-width: 600px) {
+  .text--title__title {
+    font-size: 5rem;
   }
 }
 
@@ -282,6 +292,12 @@ a {
   grid-column: 4/5;
   padding: 4em;
   color: #000000a6;
+}
+
+.container--main .text--prg__prg {
+  margin-top: 5vh;
+  text-indent: 15px;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1226px) {
@@ -335,24 +351,28 @@ a {
   width: 100%;
   border-radius: 5px;
   max-width: 450px;
+  min-width: 440px;
   min-height: 315px;
+  max-height: 320px;
 }
 
 @media (max-width: 972px) {
   .content__img {
     grid-row: 2/3;
     grid-column: 2/3;
-    min-height: 200px;
-    min-width: 150px;
+    min-height: 150px;
+    min-width: 180px;
+    max-height: 300px;
+    max-width: 380px;
   }
 }
 
 @media (max-width: 500px) {
   .content__img {
-    min-width: 300px;
+    min-width: 400px;
     min-height: 280px;
-    max-width: 90vw;
-    max-height: 300px;
+    max-width: 420px;
+    max-height: 290px;
   }
 }
 
@@ -678,32 +698,6 @@ a {
 @media (max-width: 900px) {
   .contact__social .social__block--img {
     padding-bottom: 0.6vh;
-  }
-}
-
-.contact__more {
-  grid-row: 6;
-  grid-column: 1/6;
-  padding: 0 15vw;
-  background-color: #646464;
-  margin-top: 1vh;
-}
-
-.contact__more--text {
-  padding-top: 8vh;
-}
-
-@media (max-width: 900px) {
-  .contact__more--text {
-    grid-row: 4/5;
-    padding: 2vh 1vh;
-  }
-}
-
-@media (max-width: 900px) {
-  .contact__more {
-    grid-row: 4/5;
-    padding: 0;
   }
 }
 
