@@ -101,9 +101,11 @@
         display: grid;
         width: 100vw;
         height: 100vh;
-        grid-template-rows: 15% 5% 15% 5% 40% 20% 20%;
+        grid-template-rows: 15vh 5vh 15vh 5vh 40vh 20vh 20vh;
         grid-template-columns: 15% 10% 60% 15%;
-        @media (max-width: 1172px) {
+        @media (max-width: 600px) {
+            grid-template-rows: 15vh 15vh 50vh 20vh;
+            grid-template-columns: 1;
         }
     }
 }
