@@ -18,6 +18,10 @@
         flex-direction: row;
         justify-content: end;
         margin-right: 6vw;
+        @media (max-width: 742px) {
+            justify-content: center;
+        }
+        
     }
 }
 .list__item{
@@ -32,6 +36,7 @@
         &:focus{
             transform: scale(1.4);
         }
+        
     }
 }
 
