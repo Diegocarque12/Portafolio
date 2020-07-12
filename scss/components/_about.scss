@@ -57,6 +57,12 @@
             padding-right: 5vw;
             padding-top: 10px;
         }
+        @media (max-width: 400px) {
+            padding-right: 20vw;
+        }
+        @media (max-width: 400px) {
+            padding-right: 20vw;
+        }
     }
     &__container{
         grid-column: 4/6;
