@@ -1,27 +1,69 @@
 .content{
-    height: 80vh;
+    width: 100%;
+    grid-row: 2;
     display: grid;
-    grid-template-columns: 1fr 40% 10% 40% 1fr;
+    grid-template-columns: 5vw 40vw 5vw 40vw 5vw;
     grid-template-rows: 15% 70% 10%;
+    @media (max-width: 972px) {
+        grid-template-columns: 5vw 85vw 5vw;
+        grid-template-rows: 5% 50% 40% 5%;
+    }
+    @media (max-width: 812px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     &__img{
         grid-column: 2/3;
         grid-row: 2/3;
         margin: 1vh;
-        height: 50vh;
+        height: 100%;
+        width: 100%;
         border-radius: 5px;
+        max-width: 450px;
+        min-height: 315px;
+        @media (max-width: 972px) {
+            grid-row: 2/3;
+            grid-column: 2/3;
+            min-height: 200px;
+            min-width: 150px;
+        }
+        @media (max-width: 500px) {
+            min-width: 300px;
+            min-height: 280px;
+            max-width: 90vw;
+            max-height: 300px;
+        }
     }
     &__subtitle{
         font-size: 1.8rem;
         color: $color-2;
+        @media (max-width: 972px) {
+        }
     }
     &__text{
         font-size: 1.1rem;
         color: $color-2;
+        text-indent: 15px;
+        line-height: 1.3rem;
+        padding-top: 10px;
+        @media (max-width: 972px) {
+            font-size: 0.9;
+            text-align: justify;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
     }
     &__container{
         grid-column: 4/6;
         grid-row: 2/3;
         margin: 1vh 1vw;
         padding: 2vh 2vw;
+        @media (max-width: 972px) {
+            grid-row: 3/4;
+            grid-column: 2/3;
+            height: 100%;
+            text-align: center;
+        }
     }
 }
